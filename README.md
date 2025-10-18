@@ -1,6 +1,6 @@
 # 🧠 Data Preprocessing Templates
 
-A complete collection of **Jupyter Notebook templates** for data preprocessing in **Machine Learning (ML)** and **Deep Learning (DL)** projects.  
+A complete collection of **Jupyter Notebook templates** for data preprocessing in **Machine Learning (ML)** and **Deep Learning (DL)** projects.
 This repository provides clean, reusable, and well-documented notebooks for three major data types:
 
 - 🟩 **Tabular Data (Structured)**
@@ -35,21 +35,21 @@ data-preprocessing-templates/
 Notebook: `01_tabular_preprocessing.ipynb`
 
 ### 🔹 Overview
-Covers preprocessing for structured/tabular datasets (e.g., CSV, Excel, SQL data).  
+Covers preprocessing for structured/tabular datasets (e.g., CSV, Excel, SQL data).
 It includes everything from cleaning and visualization to model training.
 
 ### 🔸 Steps Included
 
 #### **1. Imports and Settings**
--Load essential Python libraries: pandas, numpy, seaborn, matplotlib.
--Configure display settings for better readability.
+- Load essential Python libraries: pandas, numpy, seaborn, matplotlib.
+- Configure display settings for better readability.
 
 #### **2. Load Dataset**
 -  Load your CSV dataset into a pandas DataFrame.
   Example:
   ```python
   df = pd.read_csv("data/tabular_data.csv")
-  ``` 
+  ```
 
 #### **3.  Initial Inspection**
 - View first rows (`df.head()`)
@@ -63,7 +63,7 @@ It includes everything from cleaning and visualization to model training.
 - **Categorical features:** count plots.
 - **Correlation Heatmap:** detect relationships between numerical columns.
 -  **Box Plot:** detect outliers.
--  
+-
 #### **5. Missing Value Handling**
 Comprehensive handling with **individual functions**:
 -  **Drop Columns / Rows** (when missing rate is high/low)
@@ -77,7 +77,7 @@ Comprehensive handling with **individual functions**:
 Two robust methods:
 - **IQR Method** — removes extreme values outside interquartile range.
 - **Z-Score Method** — filters samples exceeding z-threshold.
- 
+
 #### **7. Feature Engineering**
 Generate more informative features:
 - **Ratio Features** — combine numeric columns meaningfully.
@@ -89,7 +89,7 @@ Reduce dimensionality and improve generalization:
 - **SelectKBest (Statistical Tests)** — chi², f_classif.
 - **Recursive Feature Elimination (RFE)** — iterative model-based removal.
 - **Feature Importance (Tree-based)** — using RandomForest or XGBoost.
-  
+
 #### **9. Train-Validation-Test Split**
 Split dataset into:
 - 64% train
@@ -144,33 +144,33 @@ Covers the full preprocessing workflow for **Natural Language Processing** tasks
 - Import text data (CSV, JSON, or raw text files)
 
 #### **2. Text Cleaning**
-- Lowercasing  
-- Removing punctuation, numbers, and stopwords  
-- Lemmatization & stemming  
+- Lowercasing
+- Removing punctuation, numbers, and stopwords
+- Lemmatization & stemming
 - Expanding contractions (“don’t” → “do not”)
 
 #### **3. Tokenization**
-- Word-level and sentence-level tokenization  
+- Word-level and sentence-level tokenization
 - Using `nltk`, `spaCy`, or `transformers` tokenizers
 
 #### **4. Text Normalization**
-- Removing extra whitespaces  
-- Handling emojis and special symbols  
+- Removing extra whitespaces
+- Handling emojis and special symbols
 - Dealing with misspellings (TextBlob / SymSpell)
 
 #### **5. Feature Extraction**
-- Bag of Words (BoW)  
-- TF-IDF  
-- Word2Vec / GloVe  
+- Bag of Words (BoW)
+- TF-IDF
+- Word2Vec / GloVe
 - Sentence Embeddings (BERT, SentenceTransformer)
 
 #### **6. Feature Selection**
-- Using chi² or mutual information for feature filtering  
+- Using chi² or mutual information for feature filtering
 - Dimensionality reduction (TruncatedSVD, PCA for sparse matrices)
 
 #### **7. Model Training**
-- Train basic NLP models (Naive Bayes, Logistic Regression, LSTM)  
-- Evaluate models using accuracy, F1, confusion matrix  
+- Train basic NLP models (Naive Bayes, Logistic Regression, LSTM)
+- Evaluate models using accuracy, F1, confusion matrix
 
 ---
 
@@ -188,26 +188,26 @@ Covers preprocessing for image-based datasets before feeding them into CNNs or o
 - Resize, normalize, and convert color spaces (RGB/Grayscale)
 
 #### **2. Data Cleaning**
-- Check for corrupted images  
-- Remove duplicates  
+- Check for corrupted images
+- Remove duplicates
 - Balance classes (under/oversampling)
 
 #### **3. Image Augmentation**
-- Rotation, flipping, shifting, zooming  
-- Brightness and contrast adjustments  
+- Rotation, flipping, shifting, zooming
+- Brightness and contrast adjustments
 - Using `ImageDataGenerator` or `Albumentations`
 
 #### **4. Feature Extraction**
-- Pre-trained models (VGG16, ResNet50) for feature extraction  
+- Pre-trained models (VGG16, ResNet50) for feature extraction
 - Flatten and normalize feature maps
 
 #### **5. Dataset Preparation**
-- Split into train/test/validation  
-- Apply augmentation only to training data  
+- Split into train/test/validation
+- Apply augmentation only to training data
 
 #### **6. Model Training**
-- Train CNN models (custom or pre-trained)  
-- Evaluate with accuracy, precision, recall, and confusion matrix  
+- Train CNN models (custom or pre-trained)
+- Evaluate with accuracy, precision, recall, and confusion matrix
 
 ---
 
