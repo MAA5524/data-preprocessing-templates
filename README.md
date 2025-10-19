@@ -63,7 +63,7 @@ It includes everything from cleaning and visualization to model training.
 - **Categorical features:** count plots.
 - **Correlation Heatmap:** detect relationships between numerical columns.
 -  **Box Plot:** detect outliers.
--
+
 #### **5. Missing Value Handling**
 Comprehensive handling with **individual functions**:
 -  **Drop Columns / Rows** (when missing rate is high/low)
